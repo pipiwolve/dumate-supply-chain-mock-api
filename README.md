@@ -11,6 +11,8 @@ npm start
 
 打开 `http://127.0.0.1:4173` 可查看系统接入门户。页面用于核验三套模拟系统、记录数量和接口状态，不承担业务看板或分析职责。
 
+公网接入门户：`https://www.demofun.online`。Dumate MCP 地址：`https://www.demofun.online/api/mcp`。可直接参考 `DUMATE-OPERATING-PROMPT.md` 配置 Dumate 的连接和操作流程。
+
 ## 模拟数据
 
 运行 `npm run generate` 会确定性生成以下数据文件：

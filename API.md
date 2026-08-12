@@ -1,6 +1,6 @@
 # 供应链模拟系统 API
 
-部署后根地址为 `https://<your-vercel-domain>`，本地为 `http://127.0.0.1:4173`。
+部署后根地址为 `https://www.demofun.online`，本地为 `http://127.0.0.1:4173`。MCP 地址为 `https://www.demofun.online/api/mcp`。
 
 所有资源接口均为 `GET`，返回 JSON 数组；数据为固定种子演示数据。
 
