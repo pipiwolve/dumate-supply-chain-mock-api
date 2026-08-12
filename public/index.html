@@ -1,0 +1,92 @@
+<!doctype html>
+<!--
+THESIS: 这是 Dumate 的上游系统接入门户，拒绝把原始系统伪装成业务看板。
+OWN-WORLD: 深海军蓝导航、冷白工作区、青绿色连接状态、等宽数据标识，像一张可核验的系统联络单。
+STORY: 访客先确认服务在线，再看三套系统各自提供的事实数据，最后复制 MCP 地址或调用 REST 资源。
+FIRST VIEWPORT: 左侧服务身份与导航，右侧标题和接入状态，随后是三系统数据目录与接口分组。
+FORM: 接入门户，operate surface；以系统目录为主结构，状态脚本为唯一动态增强。
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+-->
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#102A56" />
+    <link rel="icon" href="data:," />
+    <title>Dumate Supply Chain Systems</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="服务导航">
+        <div class="brand-lockup">
+          <span class="brand-mark" aria-hidden="true">DS</span>
+          <div>
+            <strong>Dumate</strong>
+            <span>Supply Chain Systems</span>
+          </div>
+        </div>
+        <div class="service-label">上游系统模拟器</div>
+        <nav class="nav-list">
+          <a class="nav-item active" href="#overview"><span class="nav-dot"></span>服务总览</a>
+          <a class="nav-item" href="#systems"><span class="nav-dot"></span>系统目录</a>
+          <a class="nav-item" href="#interfaces"><span class="nav-dot"></span>接口清单</a>
+          <a class="nav-item" href="#mcp"><span class="nav-dot"></span>MCP 接入</a>
+        </nav>
+        <div class="sidebar-note">
+          <span class="note-mark">i</span>
+          <p>当前页面仅用于核验上游模拟数据与连接状态。补货建议、预警、看板和定时推送由 Dumate 负责。</p>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div class="breadcrumb"><span>服务</span><span>/</span><strong>接入门户</strong></div>
+          <div class="topbar-actions"><span class="demo-tag">演示环境 · 固定种子</span><button class="refresh-button" id="refreshButton" type="button"><span aria-hidden="true">↻</span>刷新状态</button></div>
+        </header>
+
+        <section class="intro" id="overview">
+          <div>
+            <p class="eyebrow">UPSTREAM SYSTEM SIMULATOR</p>
+            <h1>供应链事实数据，已准备接入。</h1>
+            <p class="intro-copy">三套独立模拟系统通过 REST API 与 MCP 网关提供可重复的业务原始数据，供 Dumate 编排和分析。</p>
+          </div>
+          <div class="health-panel" aria-live="polite">
+            <div class="health-heading"><span class="status-light pending" id="healthLight"></span><span id="healthText">正在检查连接</span></div>
+            <div class="health-meta"><span>服务版本 <b>0.2.0</b></span><span>区域 <b>本地模拟</b></span></div>
+          </div>
+        </section>
+
+        <section class="section-block" id="systems">
+          <div class="section-heading"><div><p class="eyebrow">SYSTEM CATALOG</p><h2>三套上游系统</h2></div><span class="section-count">3 systems</span></div>
+          <div class="system-table" role="table" aria-label="上游系统目录">
+            <div class="system-row system-header" role="row"><span>系统</span><span>模拟数据范围</span><span>记录状态</span><span>连接</span></div>
+            <div class="system-row" role="row"><div class="system-name"><span class="system-icon erp">E</span><div><strong>ERP / OMS</strong><small>订单与计划事实</small></div></div><div class="data-scope">采购订单、订单明细、到货记录<br />销售预测、促销计划、销售历史</div><div class="record-count" id="erpCount">-- 条记录</div><div class="connection"><span class="status-light"></span><span>可查询</span></div></div>
+            <div class="system-row" role="row"><div class="system-name"><span class="system-icon wms">W</span><div><strong>WMS</strong><small>仓储与库存事实</small></div></div><div class="data-scope">仓库主数据、库存快照<br />库存流水</div><div class="record-count" id="wmsCount">-- 条记录</div><div class="connection"><span class="status-light"></span><span>可查询</span></div></div>
+            <div class="system-row" role="row"><div class="system-name"><span class="system-icon crm">C</span><div><strong>CRM / 供应商</strong><small>供应商协作事实</small></div></div><div class="data-scope">供应商、SKU 主数据<br />供应商沟通记录</div><div class="record-count" id="crmCount">-- 条记录</div><div class="connection"><span class="status-light"></span><span>可查询</span></div></div>
+          </div>
+        </section>
+
+        <section class="lower-grid">
+          <div class="section-block" id="interfaces">
+            <div class="section-heading"><div><p class="eyebrow">REST RESOURCES</p><h2>接口清单</h2></div><span class="section-count">GET /api/*</span></div>
+            <div class="endpoint-list">
+              <div class="endpoint-group"><span class="endpoint-label erp-label">ERP / OMS</span><div class="endpoint-path"><code>/api/orders</code><span>采购订单</span></div><div class="endpoint-path"><code>/api/salesForecast</code><span>销售预测</span></div><div class="endpoint-path"><code>/api/receivingRecords</code><span>到货记录</span></div></div>
+              <div class="endpoint-group"><span class="endpoint-label wms-label">WMS</span><div class="endpoint-path"><code>/api/inventory</code><span>库存快照</span></div><div class="endpoint-path"><code>/api/warehouses</code><span>仓库主数据</span></div><div class="endpoint-path"><code>/api/inventoryTransactions</code><span>库存流水</span></div></div>
+              <div class="endpoint-group"><span class="endpoint-label crm-label">CRM</span><div class="endpoint-path"><code>/api/suppliers</code><span>供应商主数据</span></div><div class="endpoint-path"><code>/api/supplierCommunications</code><span>沟通记录</span></div><div class="endpoint-path"><code>/api/skus</code><span>SKU 主数据</span></div></div>
+            </div>
+          </div>
+          <div class="section-block mcp-block" id="mcp">
+            <div class="section-heading"><div><p class="eyebrow">MODEL CONTEXT PROTOCOL</p><h2>MCP 网关</h2></div><span class="live-pill"><span class="status-light"></span>可用</span></div>
+            <p class="mcp-copy">通过一个 JSON-RPC 风格入口，让 Dumate 查询六个上游事实工具。</p>
+            <div class="code-line"><code id="mcpEndpoint">POST /api/mcp</code><button class="copy-button" id="copyButton" type="button" aria-label="复制 MCP 地址">复制</button></div>
+            <div class="tool-list"><span>get_inventory</span><span>get_sales_forecast</span><span>get_purchase_orders</span><span>get_supplier_info</span><span>get_supplier_communications</span><span>get_order_status</span></div>
+          </div>
+        </section>
+
+        <footer class="footer"><span>dumate-supply-chain-systems</span><span id="updatedAt">状态检查中</span><span>数据不代表真实业务结果</span></footer>
+      </main>
+    </div>
+    <script src="/app.js" defer></script>
+  </body>
+</html>
