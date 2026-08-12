@@ -70,7 +70,7 @@
 - 供应商沟通归档后的任务存储
 - 定时报告和消息推送
 
-如果 Dumate 返回“无法连接”或“没有发现工具”，先确认访问地址是否完整包含 `/api/mcp`，再检查 `type` 是否填写为 `streamableHttp`。
+如果 Dumate 返回“无法连接”或“没有发现工具”，先确认访问地址是否完整包含 `/api/mcp`，再检查 `type` 是否填写为 `streamableHttp`。服务支持 `Mcp-Session-Id` 会话头；不要把 `/health` 或根页面地址填入 MCP URL。
 
 ## 相关地址
 
