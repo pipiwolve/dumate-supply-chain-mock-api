@@ -1,0 +1,162 @@
+[
+  {
+    "orderId": "PO-260801-001",
+    "skuId": "SKU-1001",
+    "batchNo": "B-001-A",
+    "quantity": 100,
+    "unitPrice": 39,
+    "receivedQuantity": 0,
+    "qcPassed": 0,
+    "qcFailed": 0
+  },
+  {
+    "orderId": "PO-260801-001",
+    "skuId": "SKU-1002",
+    "batchNo": "B-001-B",
+    "quantity": 70,
+    "unitPrice": 59,
+    "receivedQuantity": 0,
+    "qcPassed": 0,
+    "qcFailed": 0
+  },
+  {
+    "orderId": "PO-260802-002",
+    "skuId": "SKU-1003",
+    "batchNo": "B-002-A",
+    "quantity": 120,
+    "unitPrice": 12,
+    "receivedQuantity": 0,
+    "qcPassed": 0,
+    "qcFailed": 0
+  },
+  {
+    "orderId": "PO-260802-002",
+    "skuId": "SKU-1004",
+    "batchNo": "B-002-B",
+    "quantity": 84,
+    "unitPrice": 26,
+    "receivedQuantity": 0,
+    "qcPassed": 0,
+    "qcFailed": 0
+  },
+  {
+    "orderId": "PO-260803-003",
+    "skuId": "SKU-1005",
+    "batchNo": "B-003-A",
+    "quantity": 140,
+    "unitPrice": 46,
+    "receivedQuantity": 0,
+    "qcPassed": 0,
+    "qcFailed": 0
+  },
+  {
+    "orderId": "PO-260803-003",
+    "skuId": "SKU-1006",
+    "batchNo": "B-003-B",
+    "quantity": 98,
+    "unitPrice": 68,
+    "receivedQuantity": 0,
+    "qcPassed": 0,
+    "qcFailed": 0
+  },
+  {
+    "orderId": "PO-260804-004",
+    "skuId": "SKU-1007",
+    "batchNo": "B-004-A",
+    "quantity": 160,
+    "unitPrice": 29,
+    "receivedQuantity": 0,
+    "qcPassed": 0,
+    "qcFailed": 0
+  },
+  {
+    "orderId": "PO-260804-004",
+    "skuId": "SKU-1008",
+    "batchNo": "B-004-B",
+    "quantity": 112,
+    "unitPrice": 55,
+    "receivedQuantity": 0,
+    "qcPassed": 0,
+    "qcFailed": 0
+  },
+  {
+    "orderId": "PO-260805-005",
+    "skuId": "SKU-1009",
+    "batchNo": "B-005-A",
+    "quantity": 180,
+    "unitPrice": 4.8,
+    "receivedQuantity": 0,
+    "qcPassed": 0,
+    "qcFailed": 0
+  },
+  {
+    "orderId": "PO-260805-005",
+    "skuId": "SKU-1010",
+    "batchNo": "B-005-B",
+    "quantity": 126,
+    "unitPrice": 3.2,
+    "receivedQuantity": 0,
+    "qcPassed": 0,
+    "qcFailed": 0
+  },
+  {
+    "orderId": "PO-260806-006",
+    "skuId": "SKU-1011",
+    "batchNo": "B-006-A",
+    "quantity": 200,
+    "unitPrice": 39,
+    "receivedQuantity": 0,
+    "qcPassed": 0,
+    "qcFailed": 0
+  },
+  {
+    "orderId": "PO-260806-006",
+    "skuId": "SKU-1012",
+    "batchNo": "B-006-B",
+    "quantity": 140,
+    "unitPrice": 32,
+    "receivedQuantity": 0,
+    "qcPassed": 0,
+    "qcFailed": 0
+  },
+  {
+    "orderId": "PO-260728-007",
+    "skuId": "SKU-1001",
+    "batchNo": "B-007-A",
+    "quantity": 220,
+    "unitPrice": 39,
+    "receivedQuantity": 220,
+    "qcPassed": 220,
+    "qcFailed": 0
+  },
+  {
+    "orderId": "PO-260729-008",
+    "skuId": "SKU-1003",
+    "batchNo": "B-008-A",
+    "quantity": 240,
+    "unitPrice": 12,
+    "receivedQuantity": 240,
+    "qcPassed": 240,
+    "qcFailed": 0
+  },
+  {
+    "orderId": "PO-260730-009",
+    "skuId": "SKU-1005",
+    "batchNo": "B-009-A",
+    "quantity": 260,
+    "unitPrice": 46,
+    "receivedQuantity": 0,
+    "qcPassed": 0,
+    "qcFailed": 0
+  },
+  {
+    "orderId": "PO-260731-010",
+    "skuId": "SKU-1007",
+    "batchNo": "B-010-A",
+    "quantity": 280,
+    "unitPrice": 29,
+    "receivedQuantity": 280,
+    "qcPassed": 280,
+    "qcFailed": 0
+  }
+]

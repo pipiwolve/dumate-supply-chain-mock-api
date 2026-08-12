@@ -1,0 +1,57 @@
+<!doctype html>
+<!--
+THESIS: A procurement control room that turns scattered supply-chain facts into a clear daily action queue, refusing the generic dashboard of decorative metrics.
+OWN-WORLD: Deep navy navigation and decision bands; cool white tables; teal for progress; amber and crimson reserved for risk. Tight 8px surfaces, precise rules, and operational type.
+STORY: A buyer sees what is at risk, moves into the affected record set, filters it, and acknowledges the next action without treating simulated data as customer truth.
+FIRST VIEWPORT: A fixed left navigation anchors the workspace; the main canvas opens with risk metrics, then a high-priority replenishment table and current exceptions. The refresh command sits in the upper right.
+FORM: Operational control-room workspace, chosen for scan-first daily work and a single source of truth.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md.
+-->
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Dumate 供应链协同演示系统" />
+    <title>Dumate 供应链协同</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">跳到内容</a>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="主导航">
+        <div class="brand">
+          <span class="brand-mark">D</span>
+          <span>Dumate</span>
+        </div>
+        <div class="workspace-label">供应链协同</div>
+        <nav class="nav-list">
+          <button class="nav-item is-active" data-view="overview" type="button"><span class="nav-glyph">●</span>运营总览</button>
+          <button class="nav-item" data-view="inventory" type="button"><span class="nav-glyph">□</span>库存状态</button>
+          <button class="nav-item" data-view="orders" type="button"><span class="nav-glyph">↗</span>采购订单</button>
+          <button class="nav-item" data-view="suppliers" type="button"><span class="nav-glyph">◎</span>供应商</button>
+          <button class="nav-item" data-view="replenishment" type="button"><span class="nav-glyph">≋</span>补货建议</button>
+          <button class="nav-item" data-view="alerts" type="button"><span class="nav-glyph">!</span>异常预警 <span class="nav-count" id="nav-alert-count">-</span></button>
+        </nav>
+        <div class="sidebar-footer">
+          <span class="demo-dot"></span>
+          演示数据环境
+        </div>
+      </aside>
+
+      <main id="main-content" class="main-content">
+        <header class="topbar">
+          <div>
+            <p class="date-label" id="sync-label">数据快照 · 加载中</p>
+            <h1 id="page-title">运营总览</h1>
+          </div>
+          <div class="topbar-actions">
+            <span class="data-badge">模拟数据</span>
+            <button class="button button-secondary" id="refresh-button" type="button">刷新数据</button>
+          </div>
+        </header>
+        <section id="content" class="content" aria-live="polite"></section>
+      </main>
+    </div>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>

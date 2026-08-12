@@ -1,0 +1,32 @@
+[
+  {
+    "id": "RCV-2608-001",
+    "orderId": "PO-260728-007",
+    "skuId": "SKU-1001",
+    "receivedQuantity": 220,
+    "qcPassed": 220,
+    "qcFailed": 0,
+    "receivedAt": "2026-08-06T15:00:00+08:00",
+    "warehouseId": "WH-001"
+  },
+  {
+    "id": "RCV-2608-002",
+    "orderId": "PO-260729-008",
+    "skuId": "SKU-1003",
+    "receivedQuantity": 240,
+    "qcPassed": 240,
+    "qcFailed": 0,
+    "receivedAt": "2026-08-07T15:00:00+08:00",
+    "warehouseId": "WH-002"
+  },
+  {
+    "id": "RCV-2608-003",
+    "orderId": "PO-260731-010",
+    "skuId": "SKU-1007",
+    "receivedQuantity": 280,
+    "qcPassed": 280,
+    "qcFailed": 0,
+    "receivedAt": "2026-08-09T15:00:00+08:00",
+    "warehouseId": "WH-001"
+  }
+]

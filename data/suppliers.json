@@ -1,0 +1,74 @@
+[
+  {
+    "id": "SUP-001",
+    "name": "华东生活家居",
+    "category": "家居日用",
+    "contact": "周敏",
+    "phone": "138****2601",
+    "rating": "A",
+    "status": "活跃",
+    "paymentTerms": "月结 60 天",
+    "onTimeRate": 0.96,
+    "pendingCommunications": 1
+  },
+  {
+    "id": "SUP-002",
+    "name": "禾木食品供应链",
+    "category": "食品饮料",
+    "contact": "李琦",
+    "phone": "139****4188",
+    "rating": "A",
+    "status": "活跃",
+    "paymentTerms": "月结 45 天",
+    "onTimeRate": 0.92,
+    "pendingCommunications": 2
+  },
+  {
+    "id": "SUP-003",
+    "name": "南方个护制造",
+    "category": "个护清洁",
+    "contact": "陈晓",
+    "phone": "186****7034",
+    "rating": "B",
+    "status": "活跃",
+    "paymentTerms": "月结 30 天",
+    "onTimeRate": 0.87,
+    "pendingCommunications": 3
+  },
+  {
+    "id": "SUP-004",
+    "name": "新潮数码配件",
+    "category": "数码配件",
+    "contact": "王涛",
+    "phone": "137****8290",
+    "rating": "B",
+    "status": "活跃",
+    "paymentTerms": "月结 30 天",
+    "onTimeRate": 0.84,
+    "pendingCommunications": 1
+  },
+  {
+    "id": "SUP-005",
+    "name": "北辰纸品包装",
+    "category": "包装耗材",
+    "contact": "孙倩",
+    "phone": "188****1107",
+    "rating": "C",
+    "status": "暂停",
+    "paymentTerms": "款到发货",
+    "onTimeRate": 0.76,
+    "pendingCommunications": 0
+  },
+  {
+    "id": "SUP-006",
+    "name": "优选服饰工厂",
+    "category": "服饰配件",
+    "contact": "赵恒",
+    "phone": "151****5166",
+    "rating": "A",
+    "status": "活跃",
+    "paymentTerms": "月结 60 天",
+    "onTimeRate": 0.94,
+    "pendingCommunications": 1
+  }
+]

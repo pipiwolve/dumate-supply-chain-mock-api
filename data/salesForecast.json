@@ -1,0 +1,110 @@
+[
+  {
+    "skuId": "SKU-1001",
+    "forecastDate": "2026-08-18",
+    "forecastQuantity": 80,
+    "forecastAmount": 3120,
+    "forecastSource": "大促计划",
+    "confidence": 0.78,
+    "promotionFlag": true
+  },
+  {
+    "skuId": "SKU-1002",
+    "forecastDate": "2026-08-18",
+    "forecastQuantity": 97,
+    "forecastAmount": 5723,
+    "forecastSource": "人工调整",
+    "confidence": 0.82,
+    "promotionFlag": true
+  },
+  {
+    "skuId": "SKU-1003",
+    "forecastDate": "2026-08-18",
+    "forecastQuantity": 114,
+    "forecastAmount": 1368,
+    "forecastSource": "系统预测",
+    "confidence": 0.86,
+    "promotionFlag": false
+  },
+  {
+    "skuId": "SKU-1004",
+    "forecastDate": "2026-08-18",
+    "forecastQuantity": 131,
+    "forecastAmount": 3406,
+    "forecastSource": "大促计划",
+    "confidence": 0.9,
+    "promotionFlag": true
+  },
+  {
+    "skuId": "SKU-1005",
+    "forecastDate": "2026-08-18",
+    "forecastQuantity": 148,
+    "forecastAmount": 6808,
+    "forecastSource": "人工调整",
+    "confidence": 0.78,
+    "promotionFlag": true
+  },
+  {
+    "skuId": "SKU-1006",
+    "forecastDate": "2026-08-18",
+    "forecastQuantity": 165,
+    "forecastAmount": 11220,
+    "forecastSource": "系统预测",
+    "confidence": 0.82,
+    "promotionFlag": false
+  },
+  {
+    "skuId": "SKU-1007",
+    "forecastDate": "2026-08-18",
+    "forecastQuantity": 182,
+    "forecastAmount": 5278,
+    "forecastSource": "大促计划",
+    "confidence": 0.86,
+    "promotionFlag": true
+  },
+  {
+    "skuId": "SKU-1008",
+    "forecastDate": "2026-08-18",
+    "forecastQuantity": 199,
+    "forecastAmount": 10945,
+    "forecastSource": "人工调整",
+    "confidence": 0.9,
+    "promotionFlag": true
+  },
+  {
+    "skuId": "SKU-1009",
+    "forecastDate": "2026-08-18",
+    "forecastQuantity": 216,
+    "forecastAmount": 1036.8,
+    "forecastSource": "系统预测",
+    "confidence": 0.78,
+    "promotionFlag": false
+  },
+  {
+    "skuId": "SKU-1010",
+    "forecastDate": "2026-08-18",
+    "forecastQuantity": 233,
+    "forecastAmount": 745.6,
+    "forecastSource": "大促计划",
+    "confidence": 0.82,
+    "promotionFlag": true
+  },
+  {
+    "skuId": "SKU-1011",
+    "forecastDate": "2026-08-18",
+    "forecastQuantity": 250,
+    "forecastAmount": 9750,
+    "forecastSource": "人工调整",
+    "confidence": 0.86,
+    "promotionFlag": true
+  },
+  {
+    "skuId": "SKU-1012",
+    "forecastDate": "2026-08-18",
+    "forecastQuantity": 267,
+    "forecastAmount": 8544,
+    "forecastSource": "系统预测",
+    "confidence": 0.9,
+    "promotionFlag": false
+  }
+]

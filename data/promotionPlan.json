@@ -1,0 +1,36 @@
+[
+  {
+    "id": "PROMO-2608-001",
+    "name": "夏日生活节",
+    "startDate": "2026-08-18",
+    "endDate": "2026-08-24",
+    "expectedSalesLift": 1.45,
+    "bufferMultiplier": 1.35,
+    "priority": "高",
+    "skuIds": [
+      "SKU-1001",
+      "SKU-1002",
+      "SKU-1003",
+      "SKU-1004",
+      "SKU-1005",
+      "SKU-1006",
+      "SKU-1007",
+      "SKU-1008"
+    ]
+  },
+  {
+    "id": "PROMO-2608-002",
+    "name": "开学季数码周",
+    "startDate": "2026-08-25",
+    "endDate": "2026-08-31",
+    "expectedSalesLift": 1.28,
+    "bufferMultiplier": 1.2,
+    "priority": "中",
+    "skuIds": [
+      "SKU-1007",
+      "SKU-1008",
+      "SKU-1009",
+      "SKU-1010"
+    ]
+  }
+]

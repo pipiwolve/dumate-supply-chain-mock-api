@@ -1,0 +1,7 @@
+.tmp/
+.playwright-cli/
+.codegraph/
+output/
+node_modules/
+.vercel/
+*.log

@@ -1,0 +1,82 @@
+[
+  {
+    "id": "ITX-2608-001",
+    "skuId": "SKU-1001",
+    "warehouseId": "WH-001",
+    "type": "入库",
+    "quantity": 40,
+    "documentId": "RCV-2608-1",
+    "operatedAt": "2026-08-11T08:30:00+08:00",
+    "operator": "陈默"
+  },
+  {
+    "id": "ITX-2608-002",
+    "skuId": "SKU-1002",
+    "warehouseId": "WH-002",
+    "type": "出库",
+    "quantity": 50,
+    "documentId": "SO-2608-2",
+    "operatedAt": "2026-08-11T08:30:00+08:00",
+    "operator": "系统"
+  },
+  {
+    "id": "ITX-2608-003",
+    "skuId": "SKU-1003",
+    "warehouseId": "WH-001",
+    "type": "入库",
+    "quantity": 60,
+    "documentId": "RCV-2608-3",
+    "operatedAt": "2026-08-11T08:30:00+08:00",
+    "operator": "陈默"
+  },
+  {
+    "id": "ITX-2608-004",
+    "skuId": "SKU-1004",
+    "warehouseId": "WH-002",
+    "type": "出库",
+    "quantity": 70,
+    "documentId": "SO-2608-4",
+    "operatedAt": "2026-08-11T08:30:00+08:00",
+    "operator": "系统"
+  },
+  {
+    "id": "ITX-2608-005",
+    "skuId": "SKU-1005",
+    "warehouseId": "WH-001",
+    "type": "入库",
+    "quantity": 80,
+    "documentId": "RCV-2608-5",
+    "operatedAt": "2026-08-11T08:30:00+08:00",
+    "operator": "陈默"
+  },
+  {
+    "id": "ITX-2608-006",
+    "skuId": "SKU-1006",
+    "warehouseId": "WH-002",
+    "type": "出库",
+    "quantity": 90,
+    "documentId": "SO-2608-6",
+    "operatedAt": "2026-08-11T08:30:00+08:00",
+    "operator": "系统"
+  },
+  {
+    "id": "ITX-2608-007",
+    "skuId": "SKU-1007",
+    "warehouseId": "WH-001",
+    "type": "入库",
+    "quantity": 100,
+    "documentId": "RCV-2608-7",
+    "operatedAt": "2026-08-11T08:30:00+08:00",
+    "operator": "陈默"
+  },
+  {
+    "id": "ITX-2608-008",
+    "skuId": "SKU-1008",
+    "warehouseId": "WH-002",
+    "type": "出库",
+    "quantity": 110,
+    "documentId": "SO-2608-8",
+    "operatedAt": "2026-08-11T08:30:00+08:00",
+    "operator": "系统"
+  }
+]

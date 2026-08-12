@@ -1,0 +1,194 @@
+[
+  {
+    "skuId": "SKU-1001",
+    "salesDate": "2026-08-09",
+    "channel": "线上商城",
+    "quantity": 42,
+    "amount": 1638,
+    "returnQuantity": 2
+  },
+  {
+    "skuId": "SKU-1001",
+    "salesDate": "2026-08-10",
+    "channel": "直营网点",
+    "quantity": 28,
+    "amount": 1092,
+    "returnQuantity": 0
+  },
+  {
+    "skuId": "SKU-1002",
+    "salesDate": "2026-08-09",
+    "channel": "线上商城",
+    "quantity": 46,
+    "amount": 2714,
+    "returnQuantity": 0
+  },
+  {
+    "skuId": "SKU-1002",
+    "salesDate": "2026-08-10",
+    "channel": "直营网点",
+    "quantity": 31,
+    "amount": 1829,
+    "returnQuantity": 0
+  },
+  {
+    "skuId": "SKU-1003",
+    "salesDate": "2026-08-09",
+    "channel": "线上商城",
+    "quantity": 50,
+    "amount": 600,
+    "returnQuantity": 0
+  },
+  {
+    "skuId": "SKU-1003",
+    "salesDate": "2026-08-10",
+    "channel": "直营网点",
+    "quantity": 34,
+    "amount": 408,
+    "returnQuantity": 0
+  },
+  {
+    "skuId": "SKU-1004",
+    "salesDate": "2026-08-09",
+    "channel": "线上商城",
+    "quantity": 54,
+    "amount": 1404,
+    "returnQuantity": 0
+  },
+  {
+    "skuId": "SKU-1004",
+    "salesDate": "2026-08-10",
+    "channel": "直营网点",
+    "quantity": 37,
+    "amount": 962,
+    "returnQuantity": 0
+  },
+  {
+    "skuId": "SKU-1005",
+    "salesDate": "2026-08-09",
+    "channel": "线上商城",
+    "quantity": 58,
+    "amount": 2668,
+    "returnQuantity": 0
+  },
+  {
+    "skuId": "SKU-1005",
+    "salesDate": "2026-08-10",
+    "channel": "直营网点",
+    "quantity": 40,
+    "amount": 1840,
+    "returnQuantity": 0
+  },
+  {
+    "skuId": "SKU-1006",
+    "salesDate": "2026-08-09",
+    "channel": "线上商城",
+    "quantity": 62,
+    "amount": 4216,
+    "returnQuantity": 2
+  },
+  {
+    "skuId": "SKU-1006",
+    "salesDate": "2026-08-10",
+    "channel": "直营网点",
+    "quantity": 43,
+    "amount": 2924,
+    "returnQuantity": 0
+  },
+  {
+    "skuId": "SKU-1007",
+    "salesDate": "2026-08-09",
+    "channel": "线上商城",
+    "quantity": 66,
+    "amount": 1914,
+    "returnQuantity": 0
+  },
+  {
+    "skuId": "SKU-1007",
+    "salesDate": "2026-08-10",
+    "channel": "直营网点",
+    "quantity": 46,
+    "amount": 1334,
+    "returnQuantity": 0
+  },
+  {
+    "skuId": "SKU-1008",
+    "salesDate": "2026-08-09",
+    "channel": "线上商城",
+    "quantity": 70,
+    "amount": 3850,
+    "returnQuantity": 0
+  },
+  {
+    "skuId": "SKU-1008",
+    "salesDate": "2026-08-10",
+    "channel": "直营网点",
+    "quantity": 49,
+    "amount": 2695,
+    "returnQuantity": 0
+  },
+  {
+    "skuId": "SKU-1009",
+    "salesDate": "2026-08-09",
+    "channel": "线上商城",
+    "quantity": 74,
+    "amount": 355.2,
+    "returnQuantity": 0
+  },
+  {
+    "skuId": "SKU-1009",
+    "salesDate": "2026-08-10",
+    "channel": "直营网点",
+    "quantity": 52,
+    "amount": 249.6,
+    "returnQuantity": 0
+  },
+  {
+    "skuId": "SKU-1010",
+    "salesDate": "2026-08-09",
+    "channel": "线上商城",
+    "quantity": 78,
+    "amount": 249.60000000000002,
+    "returnQuantity": 0
+  },
+  {
+    "skuId": "SKU-1010",
+    "salesDate": "2026-08-10",
+    "channel": "直营网点",
+    "quantity": 55,
+    "amount": 176,
+    "returnQuantity": 0
+  },
+  {
+    "skuId": "SKU-1011",
+    "salesDate": "2026-08-09",
+    "channel": "线上商城",
+    "quantity": 82,
+    "amount": 3198,
+    "returnQuantity": 2
+  },
+  {
+    "skuId": "SKU-1011",
+    "salesDate": "2026-08-10",
+    "channel": "直营网点",
+    "quantity": 58,
+    "amount": 2262,
+    "returnQuantity": 0
+  },
+  {
+    "skuId": "SKU-1012",
+    "salesDate": "2026-08-09",
+    "channel": "线上商城",
+    "quantity": 86,
+    "amount": 2752,
+    "returnQuantity": 0
+  },
+  {
+    "skuId": "SKU-1012",
+    "salesDate": "2026-08-10",
+    "channel": "直营网点",
+    "quantity": 61,
+    "amount": 1952,
+    "returnQuantity": 0
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "COM-001",
+    "supplierId": "SUP-002",
+    "type": "email",
+    "content": "请确认低糖燕麦饼 240g 的新到货日期，原计划已延期。",
+    "communicationTime": "2026-08-11T08:42:00+08:00",
+    "ourContact": "林珊",
+    "supplierContact": "李琦",
+    "keyPoint": "交期确认",
+    "actionItem": "确认新的到货日期",
+    "actionStatus": "待办"
+  },
+  {
+    "id": "COM-002",
+    "supplierId": "SUP-003",
+    "type": "wechat",
+    "content": "氨基酸洁面本周产能已排满，预计 8 月 29 日可发货。",
+    "communicationTime": "2026-08-10T17:30:00+08:00",
+    "ourContact": "周岚",
+    "supplierContact": "陈晓",
+    "keyPoint": "异常反馈",
+    "actionItem": "评估替代供应商",
+    "actionStatus": "待办"
+  },
+  {
+    "id": "COM-003",
+    "supplierId": "SUP-001",
+    "type": "meeting",
+    "content": "保温杯与收纳箱大促备货量已确认，分批到货。",
+    "communicationTime": "2026-08-10T15:10:00+08:00",
+    "ourContact": "陈默",
+    "supplierContact": "周敏",
+    "keyPoint": "交期确认",
+    "actionItem": null,
+    "actionStatus": "已完成"
+  }
+]

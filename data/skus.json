@@ -1,0 +1,122 @@
+[
+  {
+    "id": "SKU-1001",
+    "name": "轻量保温杯 480ml",
+    "category": "家居日用",
+    "supplierId": "SUP-001",
+    "unit": "个",
+    "leadTimeDays": 12,
+    "safetyDays": 14,
+    "standardPrice": 39
+  },
+  {
+    "id": "SKU-1002",
+    "name": "折叠收纳箱 54L",
+    "category": "家居日用",
+    "supplierId": "SUP-001",
+    "unit": "个",
+    "leadTimeDays": 10,
+    "safetyDays": 10,
+    "standardPrice": 59
+  },
+  {
+    "id": "SKU-1003",
+    "name": "香辣脆笋 150g",
+    "category": "食品饮料",
+    "supplierId": "SUP-002",
+    "unit": "袋",
+    "leadTimeDays": 7,
+    "safetyDays": 12,
+    "standardPrice": 12
+  },
+  {
+    "id": "SKU-1004",
+    "name": "低糖燕麦饼 240g",
+    "category": "食品饮料",
+    "supplierId": "SUP-002",
+    "unit": "盒",
+    "leadTimeDays": 8,
+    "safetyDays": 15,
+    "standardPrice": 26
+  },
+  {
+    "id": "SKU-1005",
+    "name": "氨基酸洁面 120g",
+    "category": "个护清洁",
+    "supplierId": "SUP-003",
+    "unit": "支",
+    "leadTimeDays": 18,
+    "safetyDays": 20,
+    "standardPrice": 46
+  },
+  {
+    "id": "SKU-1006",
+    "name": "护手霜礼盒 3 支",
+    "category": "个护清洁",
+    "supplierId": "SUP-003",
+    "unit": "盒",
+    "leadTimeDays": 16,
+    "safetyDays": 18,
+    "standardPrice": 68
+  },
+  {
+    "id": "SKU-1007",
+    "name": "编织充电线 1.5m",
+    "category": "数码配件",
+    "supplierId": "SUP-004",
+    "unit": "条",
+    "leadTimeDays": 9,
+    "safetyDays": 12,
+    "standardPrice": 29
+  },
+  {
+    "id": "SKU-1008",
+    "name": "磁吸手机支架",
+    "category": "数码配件",
+    "supplierId": "SUP-004",
+    "unit": "个",
+    "leadTimeDays": 11,
+    "safetyDays": 16,
+    "standardPrice": 55
+  },
+  {
+    "id": "SKU-1009",
+    "name": "环保快递箱 3 号",
+    "category": "包装耗材",
+    "supplierId": "SUP-005",
+    "unit": "个",
+    "leadTimeDays": 6,
+    "safetyDays": 10,
+    "standardPrice": 4.8
+  },
+  {
+    "id": "SKU-1010",
+    "name": "抽绳束口袋",
+    "category": "包装耗材",
+    "supplierId": "SUP-005",
+    "unit": "个",
+    "leadTimeDays": 5,
+    "safetyDays": 9,
+    "standardPrice": 3.2
+  },
+  {
+    "id": "SKU-1011",
+    "name": "速干运动帽",
+    "category": "服饰配件",
+    "supplierId": "SUP-006",
+    "unit": "顶",
+    "leadTimeDays": 14,
+    "safetyDays": 15,
+    "standardPrice": 39
+  },
+  {
+    "id": "SKU-1012",
+    "name": "轻户外防晒袖",
+    "category": "服饰配件",
+    "supplierId": "SUP-006",
+    "unit": "双",
+    "leadTimeDays": 13,
+    "safetyDays": 14,
+    "standardPrice": 32
+  }
+]
