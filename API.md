@@ -31,14 +31,21 @@
 | `/api/skus` | `sku_master` | `id`, `name`, `category`, `supplierId`, `unit`, `leadTimeDays`, `safetyDays`, `standardPrice` |
 | `/api/supplierCommunications` | `supplier_communications` | `id`, `supplierId`, `type`, `content`, `communicationTime`, `ourContact`, `supplierContact`, `keyPoint`, `actionItem`, `actionStatus` |
 
-## DuMate 分析域
+## 服务元信息
 
-- `GET /api/replenishment`：补货建议，字段包括 `skuId`, `current`, `safety`, `forecast30`, `suggested`, `coverage`, `priority`, `eta`。
-- `GET /api/alerts`：异常预警，字段包括 `id`, `severity`, `type`, `title`, `detail`, `source`, `createdAt`, `owner`, `status`。
-- `GET /api/summary`：聚合指标。
+- `GET /api/summary`：仅提供原始数据规模与订单状态概览，便于 Dumate 做连接测试。
 - `GET /health`：健康检查。
 
 ## MCP HTTP 工具网关
+
+### 初始化
+
+```http
+POST /api/mcp
+Content-Type: application/json
+
+{"jsonrpc":"2.0","id":1,"method":"initialize","params":{"protocolVersion":"2025-06-18","capabilities":{},"clientInfo":{"name":"Dumate","version":"demo"}}}
+```
 
 ### 列出工具
 
@@ -46,7 +53,7 @@
 POST /api/mcp
 Content-Type: application/json
 
-{"method":"tools/list"}
+{"jsonrpc":"2.0","id":2,"method":"tools/list"}
 ```
 
 ### 调用工具
@@ -56,6 +63,8 @@ POST /api/mcp
 Content-Type: application/json
 
 {
+  "jsonrpc": "2.0",
+  "id": 3,
   "method": "tools/call",
   "params": {
     "name": "get_inventory",
@@ -64,7 +73,7 @@ Content-Type: application/json
 }
 ```
 
-当前工具名：`get_inventory`、`get_sales_forecast`、`get_purchase_orders`、`get_supplier_info`、`get_order_status`、`calculate_replenishment`、`upload_communication`。
+当前工具名：`get_inventory`、`get_sales_forecast`、`get_purchase_orders`、`get_supplier_info`、`get_supplier_communications`、`get_order_status`。
 
 ## 关系
 
@@ -72,4 +81,4 @@ Content-Type: application/json
 
 ## 说明
 
-当前数据接口是只读模拟源；`upload_communication` 在 MCP 网关中返回模拟归档结果，不持久化写入。真实系统接入、认证、限流、日志、消息通知和数据库替换属于后续工作。
+当前数据接口是只读模拟源。补货建议、预警处理、定时推送和数据看板由 Dumate 负责，不在此服务内实现。真实系统接入、认证、限流、日志、消息通知和完整 MCP transport 属于后续工作。

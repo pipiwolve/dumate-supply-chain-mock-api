@@ -30,6 +30,12 @@ const skus = [
   { id: "SKU-1012", name: "轻户外防晒袖", category: "服饰配件", supplierId: "SUP-006", unit: "双", leadTimeDays: 13, safetyDays: 14, standardPrice: 32 }
 ];
 
+const warehouses = [
+  { id: "WH-001", name: "华东一仓", type: "自有仓", address: "上海市青浦区", contact: "赵师傅", status: "正常" },
+  { id: "WH-002", name: "华南中心仓", type: "第三方仓", address: "广州市番禺区", contact: "黄经理", status: "正常" },
+  { id: "WH-003", name: "华北前置仓", type: "自有仓", address: "北京市大兴区", contact: "刘师傅", status: "正常" }
+];
+
 const inventorySeed = [
   ["SKU-1001", 420, 180, 56, 0, 360, "华东一仓", "正常"],
   ["SKU-1002", 86, 40, 14, 0, 120, "华东一仓", "低于安全库存"],
@@ -46,7 +52,7 @@ const inventorySeed = [
 ];
 
 const inventory = inventorySeed.map(([skuId, available, inTransit, reserved, frozen, safety, warehouse, status], index) => ({
-  skuId, skuName: skus[index].name, category: skus[index].category, warehouse, available, inTransit, reserved, frozen, safety, status, lastUpdated: now
+  skuId, skuName: skus[index].name, category: skus[index].category, warehouseId: warehouses?.find((row) => row.name === warehouse)?.id || null, warehouse, available, inTransit, reserved, frozen, safety, status, lastUpdated: now
 }));
 
 const orders = [
@@ -83,12 +89,6 @@ const alerts = [
   { id: "ALT-004", severity: "中", type: "缺货风险", title: "磁吸手机支架促销库存覆盖不足", detail: "当前可用库存仅覆盖 4 天预测销量。", source: "补货分析", createdAt: "昨天 16:05", owner: "林珊", status: "处理中" },
   { id: "ALT-005", severity: "低", type: "品质异常", title: "新潮数码配件批次抽检待复核", detail: "已发货订单中有 1 个批次需要质量负责人复核。", source: "到货记录", createdAt: "昨天 14:22", owner: "陈默", status: "已确认" },
   { id: "ALT-006", severity: "低", type: "库存积压", title: "环保快递箱 3 号库存周转偏慢", detail: "现有库存高于 90 天销量，建议结合活动消化。", source: "库存分析", createdAt: "08-09 11:18", owner: "陈默", status: "待处理" }
-];
-
-const warehouses = [
-  { id: "WH-001", name: "华东一仓", type: "自有仓", address: "上海市青浦区", contact: "赵师傅", status: "正常" },
-  { id: "WH-002", name: "华南中心仓", type: "第三方仓", address: "广州市番禺区", contact: "黄经理", status: "正常" },
-  { id: "WH-003", name: "华北前置仓", type: "自有仓", address: "北京市大兴区", contact: "刘师傅", status: "正常" }
 ];
 
 const purchaseOrderItems = orders.flatMap((order, index) => {

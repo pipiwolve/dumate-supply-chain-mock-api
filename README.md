@@ -18,10 +18,10 @@ npm start
 - ERP/OMS：`orders.json`、`purchaseOrderItems.json`、`receivingRecords.json`、`salesForecast.json`、`promotionPlan.json`、`salesHistory.json`
 - WMS：`warehouses.json`、`inventory.json`、`inventoryTransactions.json`
 - CRM：`suppliers.json`、`skus.json`、`supplierCommunications.json`
-- DuMate 分析域：`replenishment.json`、`alerts.json`、`meta.json`
+- 测试夹具（不作为上游 MCP 正式系统）：`replenishment.json`、`alerts.json`、`meta.json`
 
 `scripts/generate-mock-data.mjs` 是唯一的模拟数据来源。完整接口清单见 `API.md`。除标准资源接口外，`POST /api/mcp` 提供工具网关：`tools/list` 和 `tools/call`。
 
 ## 当前范围
 
-系统是演示环境，所有数值均为模拟数据。真实 ERP/WMS/CRM 接入、登录鉴权、消息通知和生产级 MCP Server 留待后续实施。
+系统是 Dumate 的上游系统模拟器，所有数值均为模拟数据。Dumate 负责基于这些原始数据生成补货建议、异常预警、数据看板和定时推送。真实 ERP/WMS/CRM 接入、登录鉴权、消息通知和完整 MCP Streamable HTTP/SSE transport 留待后续实施。
