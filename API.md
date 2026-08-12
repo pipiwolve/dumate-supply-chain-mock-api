@@ -77,7 +77,7 @@ Content-Type: application/json
 
 ## 关系
 
-`suppliers.id -> skus.supplierId -> inventory.skuId / salesForecast.skuId / replenishment.skuId`；`orders.id -> purchaseOrderItems.orderId -> receivingRecords.orderId`；`warehouses.id -> inventoryTransactions.warehouseId / receivingRecords.warehouseId`。
+`suppliers.id -> skus.supplierId -> inventory.skuId / salesForecast.skuId`；`orders.id -> purchaseOrderItems.orderId -> receivingRecords.orderId`；`warehouses.id -> inventoryTransactions.warehouseId / receivingRecords.warehouseId`。
 
 ## 说明
 
