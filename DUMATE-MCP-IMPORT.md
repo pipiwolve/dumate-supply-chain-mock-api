@@ -9,7 +9,7 @@
   "mcpServers": {
     "dumateSupplyChainSystems": {
       "url": "https://www.demofun.online/api/mcp",
-      "type": "sse",
+      "type": "streamableHttp",
       "headers": {}
     }
   }
@@ -29,7 +29,7 @@
 
 - 应用名称：`供应链上游系统模拟器`
 - MCP Server URL：`https://www.demofun.online/api/mcp`
-- 传输类型：`SSE`
+- 传输类型：`streamableHttp`
 - Headers：留空，无需 API Key
 
 当前公网服务是只读演示数据源，数据标签为“演示数据 · 固定种子”。
@@ -70,7 +70,7 @@
 - 供应商沟通归档后的任务存储
 - 定时报告和消息推送
 
-如果 Dumate 返回“无法连接”或“没有发现工具”，先确认访问地址是否完整包含 `/api/mcp`，再检查 `type` 是否填写为 `SSE`（不是 `streamableHttp`）。服务支持 `Mcp-Session-Id` 会话头；不要把 `/health` 或根页面地址填入 MCP URL。
+如果 Dumate 返回“无法连接”或“没有发现工具”，先确认访问地址是否完整包含 `/api/mcp`，再检查 `type` 是否填写为 `streamableHttp`。不要把 `/health` 或根页面地址填入 MCP URL。
 
 ## 相关地址
 
