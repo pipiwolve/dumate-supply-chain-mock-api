@@ -18,7 +18,7 @@ npm start
 - ERP/OMS：`orders.json`、`purchaseOrderItems.json`、`receivingRecords.json`、`salesForecast.json`、`promotionPlan.json`、`salesHistory.json`
 - WMS：`warehouses.json`、`inventory.json`、`inventoryTransactions.json`
 - CRM：`suppliers.json`、`skus.json`、`supplierCommunications.json`
-- 测试夹具（不作为上游 MCP 正式系统）：`replenishment.json`、`alerts.json`、`meta.json`
+- 服务元信息：`meta.json`
 
 `scripts/generate-mock-data.mjs` 是唯一的模拟数据来源。完整接口清单见 `API.md`。除标准资源接口外，`POST /api/mcp` 提供工具网关：`tools/list` 和 `tools/call`。
 

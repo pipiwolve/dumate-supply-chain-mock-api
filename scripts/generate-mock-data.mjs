@@ -68,29 +68,6 @@ const orders = [
   { id: "PO-260731-010", supplierId: "SUP-004", supplierName: "新潮数码配件", orderDate: "2026-07-31", requiredDelivery: "2026-08-08", actualDelivery: "2026-08-09", status: "已入库", statusKey: "received", amount: 8600, items: 1, owner: "陈默", delayDays: 1 }
 ];
 
-const replenishment = [
-  ["SKU-1005", 72, 110, 220, 258, 2, "高", "2026-08-29"],
-  ["SKU-1008", 52, 96, 180, 224, 4, "高", "2026-08-25"],
-  ["SKU-1002", 86, 120, 160, 194, 6, "中", "2026-08-23"],
-  ["SKU-1006", 18, 48, 100, 130, 3, "中", "2026-08-27"],
-  ["SKU-1011", 22, 40, 72, 90, 5, "中", "2026-08-30"],
-  ["SKU-1004", 310, 420, 120, 230, 18, "低", "2026-08-18"],
-  ["SKU-1010", 380, 600, 140, 360, 26, "低", "2026-08-17"],
-  ["SKU-1001", 420, 360, 0, 0, 32, "观察", "-" ]
-].map(([skuId, current, safety, forecast30, suggested, coverage, priority, eta]) => ({
-  skuId, skuName: skus.find((s) => s.id === skuId).name, category: skus.find((s) => s.id === skuId).category,
-  current, safety, forecast30, suggested, coverage, priority, eta
-}));
-
-const alerts = [
-  { id: "ALT-001", severity: "高", type: "延期", title: "PO-260802-002 已超过要求交期", detail: "禾木食品供应链 / 低糖燕麦饼 240g，需采购确认新的到货日期。", source: "采购订单", createdAt: "今天 08:42", owner: "林珊", status: "待处理" },
-  { id: "ALT-002", severity: "高", type: "缺货风险", title: "氨基酸洁面 120g 低于安全库存", detail: "可用库存 72，安全库存 110，建议补货 258 支。", source: "库存快照", createdAt: "今天 08:16", owner: "周岚", status: "待处理" },
-  { id: "ALT-003", severity: "中", type: "沟通超时", title: "南方个护制造有 3 条待回复沟通", detail: "最早一条待回复记录已超过 24 小时。", source: "沟通归档", createdAt: "昨天 17:30", owner: "周岚", status: "待处理" },
-  { id: "ALT-004", severity: "中", type: "缺货风险", title: "磁吸手机支架促销库存覆盖不足", detail: "当前可用库存仅覆盖 4 天预测销量。", source: "补货分析", createdAt: "昨天 16:05", owner: "林珊", status: "处理中" },
-  { id: "ALT-005", severity: "低", type: "品质异常", title: "新潮数码配件批次抽检待复核", detail: "已发货订单中有 1 个批次需要质量负责人复核。", source: "到货记录", createdAt: "昨天 14:22", owner: "陈默", status: "已确认" },
-  { id: "ALT-006", severity: "低", type: "库存积压", title: "环保快递箱 3 号库存周转偏慢", detail: "现有库存高于 90 天销量，建议结合活动消化。", source: "库存分析", createdAt: "08-09 11:18", owner: "陈默", status: "待处理" }
-];
-
 const purchaseOrderItems = orders.flatMap((order, index) => {
   const firstSku = skus[(index * 2) % skus.length];
   const secondSku = skus[(index * 2 + 1) % skus.length];
@@ -142,8 +119,12 @@ const inventoryTransactions = inventory.slice(0, 8).map((row, index) => ({
   id: `ITX-2608-${String(index + 1).padStart(3, "0")}`, skuId: row.skuId, warehouseId: index % 2 ? "WH-002" : "WH-001", type: index % 2 ? "出库" : "入库", quantity: 40 + index * 10, documentId: index % 2 ? `SO-2608-${index + 1}` : `RCV-2608-${index + 1}`, operatedAt: "2026-08-11T08:30:00+08:00", operator: index % 2 ? "系统" : "陈默"
 }));
 
-const dataset = { generatedAt: now, label: "演示数据 · 固定种子", suppliers, skus, inventory, orders, replenishment, alerts, warehouses, purchaseOrderItems, receivingRecords, salesForecast, promotionPlan, salesHistory, supplierCommunications, orderStatusHistory, inventoryTransactions };
+const dataset = { generatedAt: now, label: "演示数据 · 固定种子", suppliers, skus, inventory, orders, warehouses, purchaseOrderItems, receivingRecords, salesForecast, promotionPlan, salesHistory, supplierCommunications, orderStatusHistory, inventoryTransactions };
 await fs.mkdir(dataDir, { recursive: true });
+const expectedFiles = new Set([...Object.keys(dataset), "meta"].map((key) => `${key}.json`));
+for (const filename of await fs.readdir(dataDir)) {
+  if (filename.endsWith(".json") && !expectedFiles.has(filename)) await fs.unlink(path.join(dataDir, filename));
+}
 for (const [key, value] of Object.entries(dataset)) {
   if (key === "generatedAt" || key === "label") continue;
   await fs.writeFile(path.join(dataDir, `${key}.json`), `${JSON.stringify(value, null, 2)}\n`);
