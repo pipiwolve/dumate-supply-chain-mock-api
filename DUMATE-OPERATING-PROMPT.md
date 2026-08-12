@@ -77,3 +77,7 @@
 ## 8. 首次验收指令
 
 连接完成后执行：`initialize`；`tools/list`；`get_inventory`（`category=个护清洁`）；`get_purchase_orders`（`is_delayed=true`）；选择一个返回订单调用 `get_order_status`（包含历史）。最后生成“演示数据连接验收报告”，列出记录数、字段缺失和无法执行的动作。
+
+## 9. 演示脚本
+
+完成连接验收后，按 `DUMATE-DEMO-RUNBOOK.md` 的顺序执行：运营总览、异常订单预警、夏日生活节促销备货、供应商沟通归档、补货分析报告、看板、定时周报。该文件包含每一步可直接粘贴的 Dumate Prompt、固定种子中的示例订单和预期展示结果。
